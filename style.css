@@ -43,8 +43,17 @@ ul {
 /************************************/
 /************** HEADER **************/
 /************************************/
-header .nav {
+header .navbar {
 	background-color: var(--blue);
+}
+
+header .navbar-toggler {
+	box-shadow: none !important;
+	font-size: 2rem;
+}
+
+header .navbar-toggler .icon-menu {
+	color: var(--grey);
 }
 
 header .nav-link {
