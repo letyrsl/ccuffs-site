@@ -93,6 +93,9 @@ header .nav-link:hover > span:before {
 	background-color: var(--blue);
 	padding-top: 90px;
 	/* background: linear-gradient(135deg, var(--purple) 0%, var(--blue) 100%); */
+	/* background-image: url("imgs/profile.png");
+	min-height: 100vh;
+	background-repeat: no-repeat; */
 }
 
 .banner .profile-img img {
@@ -130,6 +133,47 @@ header .nav-link:hover > span:before {
 	font-family: MontserratBold;
 }
 
+#sobre .skills ul {
+	list-style-type: circle;
+}
+
+/************************************/
+/************* PORTFOLIO ************/
+/************************************/
+
+#portfolio {
+	background-color: var(--blue);
+}
+
+#portfolio .title-purple {
+	text-shadow: 1px 1px 3px var(--grey);	
+}
+
+#portfolio .card{
+	border-radius: 35px;
+}
+
+#portfolio .card .card-img-top {
+	height: 200px;
+	object-fit: contain;
+}
+
+#portfolio .card .card-title{
+	font-family: MontserratBold;
+	color: var(--purple);
+}
+
+#portfolio .card .btn-card {
+	background-color: var(--purple);
+	border-radius: 25px;
+	padding: 10px 25px;
+	transition: all 0.3s ease-in-out 0s;
+	color: white;
+}
+
+#portfolio .card .btn-card:hover {
+	transform: scale(1.1);
+}
 
 /************************************/
 /************** FOOTER **************/
