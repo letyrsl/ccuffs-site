@@ -26,7 +26,8 @@ body {
 }
 
 a, a:hover {
-	color: inherit
+	color: inherit;
+	text-decoration: none;
 }
 
 ul {
@@ -45,6 +46,7 @@ ul {
 /************************************/
 header .navbar {
 	background-color: var(--blue);
+	box-shadow: 0px 5px 35px -27px rgb(0 0 0 / 75%);
 }
 
 header .navbar-toggler {
@@ -133,7 +135,11 @@ header .nav-link:hover > span:before {
 	font-family: MontserratBold;
 }
 
-
+@media (min-width: 400px) {
+	#sobre .skills ul {
+		columns: 2;
+	}
+}
 
 /************************************/
 /************* PORTFOLIO ************/
@@ -171,6 +177,55 @@ header .nav-link:hover > span:before {
 
 #portfolio .card .btn-card:hover {
 	transform: scale(1.1);
+}
+
+/************************************/
+/************** CONTATO *************/
+/************************************/
+
+@media (min-width: 400px) {
+	#contato ul li {
+		padding: 0 20px;
+	}
+	#contato ul li a .icon{
+		font-size: 2rem !important;
+	}
+}
+
+#contato ul li a .icon{
+	font-size: 1.5rem;
+	padding-right: 20px;
+}
+
+#contato ul li a h4{
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+#contato ul li a p {
+	font-size: 0.9rem;
+}
+
+
+/************************************/
+/************** MODAIS **************/
+/************************************/
+.modal .modal-title {
+	font-family: MontserratBold;
+	font-size: 1.5rem;
+	color: var(--blue);
+	/* text-shadow: 1px 1px 3px var(--grey); */
+}
+
+
+.carousel .carousel-item {
+	max-height: 60vh;
+}
+
+.carousel .carousel-item img {
+	height: 60vh;
+	object-fit: contain;
+	position: relative;
 }
 
 /************************************/
